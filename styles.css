@@ -1,0 +1,153 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container */
+  .container {
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    margin: 20px;
+    transition: background-color 0.5s;
+  }
+  
+  /* Header */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Time Settings */
+  .time-settings {
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  
+  input {
+    width: 70px;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .btn:hover:enabled {
+    background-color: #45a049;
+  }
+  
+  /* Timer Display */
+  .timer-display {
+    font-size: 60px;
+    margin: 30px 0;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Control Buttons */
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .session-info {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .session-info p {
+    margin: 5px 0;
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 30px;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    .timer-display {
+      font-size: 50px;
+    }
+  
+    .controls {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .btn {
+      font-size: 1rem;
+      padding: 10px 15px;
+    }
+  
+    .session-info {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 1.6rem;
+    }
+  
+    .timer-display {
+      font-size: 40px;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  
+    .session-info {
+      font-size: 0.9rem;
+    }
+  }
+  
